@@ -42,10 +42,10 @@ if (task == "") {
   tablerow.appendChild(td3)
   tablerow.appendChild(td4)
   tbody.appendChild(tablerow);
-  taskInput.value = "";
-  dateInput.value = "";
+  document.getElementById("taskInput").value = "";
+  document.getElementById("dateInput").value = "";
 }
-getElementById("addButton").addEventListener("click", addTask);
+document.getElementById("addButton").addEventListener("click", addTask);
     
   
 // const input=document.querySelector("input")
