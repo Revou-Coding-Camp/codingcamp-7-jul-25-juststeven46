@@ -9,8 +9,8 @@
 <body>
     <h3 class="title">TO-DO</h3>
     <div class="input">
-        <input id="taskInput" type="text" placeholder="Add a to-do..."/>
-        <input id="dateInput" type="date"/>
+        <input required id="taskInput" type="text" placeholder="Add a to-do..."/>
+        <input required id="dateInput" type="date"/>
         <button id="addButton" class="add" type="submit">+</button>
         <button class="filter">filter</button>
         <button class="delete">delete all</button>
@@ -25,11 +25,10 @@
                 <th>actions</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="tbody">
             <tr>
-                <td id="task_row" colspan="4" style="text-align: center;">No task found</td>
+                <td id="task_row" colspan="2" style="text-align: center;">No task found</td>
             </tr>
-            </div>
         </tbody>
     </table>
     </div>
